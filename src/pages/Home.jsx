@@ -1,6 +1,5 @@
 import UserResult from "../component/users/UserResults";
 
-
 function Home(){
     return(
         <div>
