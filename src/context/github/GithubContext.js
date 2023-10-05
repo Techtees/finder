@@ -10,7 +10,7 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
 export const GithubProvider = ({children}) => {
     
     const initialState = {
-        user:[],
+        users: [],
         loading: false,
     }
     const [state,dispatch] = useReducer(githubReducer, initialState)
@@ -42,7 +42,6 @@ export const GithubProvider = ({children}) => {
     value={{
         users: state.users,
         loading: state.loading,
-        fetchUsers,
     }}
     >
         {children}
